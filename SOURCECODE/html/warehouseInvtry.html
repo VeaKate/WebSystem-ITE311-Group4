@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Inventory</title>
+      <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/warehouseInvtry.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="role-select">
+                <span class="profile-svg">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="40" cy="40" r="36" stroke="#111" stroke-width="4" />
+                        <circle cx="40" cy="32" r="14" stroke="#111" stroke-width="4" />
+                        <path d="M20 62c0-10.5 13-16 20-16s20 5.5 20 16" stroke="#111" stroke-width="4" fill="none" />
+                    </svg>
+                </span>
+                <span>Warehouse Manager</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#">Dashboard</a>
+                <a href="#" class="active">Inventory</a>
+                <a href="#">Stock Movements</a>
+            </nav>
+        </aside>
+        <div class="logo-area">
+            <span class="logo-left">We</span><span class="logo-script">Build</span>
+        </div>
+        <main class="main-content">
+            <span class="settings-icon">&#9881;</span>
+            <div class="inventory-title">
+                INVENTORY
+                <div class="inventory-title-underline"></div>
+            </div>
+            <hr>
+            <div class="filter-bar">
+                <button class="filter-btn">Category <span class="dropdown-arrow">&#9660;</span></button>
+                <button class="filter-btn">Location <span class="dropdown-arrow">&#9660;</span></button>
+                <div class="search-add-wrapper">
+                    <div class="search-box">
+                        <input type="text" placeholder="" />
+                        <span class="search-icon">&#128269;</span>
+                    </div>
+                    <button class="add-item-btn">&#43; Add item</button>
+                </div>
+            </div>
+            <table class="inventory-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>SKU</th>
+                        <th>Category</th>
+                        <th>Location</th>
+                        <th>Quantity</th>
+                        <th>Status</th>
+                        <th>Expiry</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brake Pads Premium</td>
+                        <td>BP-PRE-001</td>
+                        <td>Automotive</td>
+                        <td>A-1-01</td>
+                        <td>100</td>
+                        <td><span class="badge low-stock">Low Stock</span></td>
+                        <td>2026-12-15</td>
+                        <td>
+                            <span class="action-icon">&#9998;</span>
+                            <span class="action-icon">&#128465;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td><span class="badge out-stock">Out of Stock</span></td>
+                        <td></td>
+                        <td>
+                            <span class="action-icon">&#9998;</span>
+                            <span class="action-icon">&#128465;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td><span class="badge in-stock">In Stock</span></td>
+                        <td></td>
+                        <td>
+                            <span class="action-icon">&#9998;</span>
+                            <span class="action-icon">&#128465;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td><span class="badge in-stock">In Stock</span></td>
+                        <td></td>
+                        <td>
+                            <span class="action-icon">&#9998;</span>
+                            <span class="action-icon">&#128465;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td><span class="badge low-stock">Low Stock</span></td>
+                        <td></td>
+                        <td>
+                            <span class="action-icon">&#9998;</span>
+                            <span class="action-icon">&#128465;</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>

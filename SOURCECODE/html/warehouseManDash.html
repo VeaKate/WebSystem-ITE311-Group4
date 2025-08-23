@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/warehouseManDash.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="role-select">
+                <span class="profile-svg">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="40" cy="40" r="36" stroke="#111" stroke-width="4" />
+                        <circle cx="40" cy="32" r="14" stroke="#111" stroke-width="4" />
+                        <path d="M20 62c0-10.5 13-16 20-16s20 5.5 20 16" stroke="#111" stroke-width="4" fill="none" />
+                    </svg>
+                </span>
+                <span>Warehouse Manager</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Inventory</a>
+                <a href="#">Stock Movements</a>
+            </nav>
+        </aside>
+        <div class="logo-area">
+            <span class="logo-left">We</span><span class="logo-script">Build</span>
+        </div>
+        <main class="main-content">
+            <header class="dashboard-header">
+                <span class="settings-icon">&#9881;</span>
+            </header>
+            <div class="dashboard-title">
+                <div class="dashboard-title-stack">
+                    <div class="dashboard-title-warehouse">Warehouse</div>
+                    <div class="dashboard-title-dashboard">DASHBOARD</div>
+                </div>
+            </div>
+            <hr>
+            <div class="warehouse-cards">
+                <div class="warehouse-card">
+                    <h2>Warehouse A</h2>
+                    <div class="capacity-row">Capacity <span>75.0%</span></div>
+                    <div class="capacity-bar"><div class="fill" style="width:75%"></div></div>
+                    <div class="card-stats">
+                        <div class="stat">Items<br><span>2,340</span></div>
+                        <div class="stat">Staff<br><span>12</span></div>
+                    </div>
+                    <div class="card-status completed">Inbound shipment completed 2h ago</div>
+                </div>
+                <div class="warehouse-card">
+                    <h2>Warehouse B</h2>
+                    <div class="capacity-row">Capacity <span>87.70%</span></div>
+                    <div class="capacity-bar"><div class="fill" style="width:87.7%"></div></div>
+                    <div class="card-stats">
+                        <div class="stat">Items<br><span>1,890</span></div>
+                        <div class="stat">Staff<br><span>8</span></div>
+                    </div>
+                    <div class="card-status inprogress">Stock transfer in progress</div>
+                </div>
+                <div class="warehouse-card">
+                    <h2>Warehouse C</h2>
+                    <div class="capacity-row">Capacity <span>95.8%</span></div>
+                    <div class="capacity-bar"><div class="fill" style="width:95.8%"></div></div>
+                    <div class="card-stats">
+                        <div class="stat">Items<br><span>3,120</span></div>
+                        <div class="stat">Staff<br><span>15</span></div>
+                    </div>
+                    <div class="card-status inprogress">Stock transfer in progress</div>
+                </div>
+            </div>
+            <div class="summary-row">
+                <div class="summary-box approvals">
+                    <div>Pending Approvals</div>
+                    <div class="summary-number">5</div>
+                </div>
+                <div class="summary-box alerts">
+                    <div>Alert Stocks</div>
+                    <div class="summary-number">3</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

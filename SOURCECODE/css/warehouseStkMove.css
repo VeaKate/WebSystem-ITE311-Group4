@@ -1,0 +1,189 @@
+body {
+    background: #f6f6f6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+.sidebar {
+    background: #eaeaea;
+    width: 200px;
+    min-width: 180px;
+    border: 2px solid #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.role-select {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #222;
+    font-size: 1.1rem;
+    gap: 8px;
+    position: relative;
+}
+.profile-svg {
+    display: block;
+    margin-bottom: 8px;
+    width: 80px;
+    height: 80px;
+}
+.profile-svg svg {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+.sidebar-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 32px;
+}
+.sidebar-nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 8px 0 8px 32px;
+    border-left: 3px solid transparent;
+    transition: border-color 0.2s;
+}
+.sidebar-nav a.active, .sidebar-nav a:hover {
+    border-left: 3px solid #222;
+    background: #f6f6f6;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.logo-area {
+    position: absolute;
+    left: 220px;
+    top: 18px;
+    z-index: 2;
+    display: flex;
+    align-items: flex-start;
+    height: 80px;
+    pointer-events: none;
+}
+.logo-left {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 2.6rem;
+    margin-right: -18px;
+    margin-top: 8px;
+    color: #111;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 2px;
+}
+.logo-script {
+    font-family: 'Great Vibes',cursive;
+    font-size: 48px;
+    font-weight: normal;
+    color: #111;
+    position: relative;
+    left: -10px;
+    top: -8px;
+    z-index: 1;
+    display: inline-block;
+}
+.main-content {
+    flex: 1;
+    padding: 24px 32px 0 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.settings-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #222;
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    z-index: 10;
+}
+.stock-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+.stock-title-stock {
+    font-size: 1.5rem;
+    font-family: serif;
+    font-weight: 600;
+    margin-bottom: 0px;
+    letter-spacing: 0.5px;
+}
+.stock-title-movements {
+    font-size: 2.8rem;
+    font-family: serif;
+    font-weight: bold;
+    position: relative;
+    margin-top: 0px;
+    letter-spacing: 1px;
+}
+.stock-title-movements::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-radius: 2px;
+}
+hr {
+    border: none;
+    border-top: 2px solid #222;
+    margin: 12px 0 24px 0;
+}
+.movement-history-box {
+    background: #fff;
+    border: 2px solid #aaa;
+    border-radius: 24px;
+    margin-bottom: 32px;
+    padding: 18px 24px;
+    min-height: 180px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    font-size: 1.1rem;
+}
+.movement-history-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.movement-row {
+    display: flex;
+    gap: 32px;
+    margin-top: 8px;
+}
+.movement-box {
+    background: #fff;
+    border: 2px solid #aaa;
+    border-radius: 24px;
+    padding: 18px 24px;
+    min-width: 320px;
+    min-height: 140px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: flex-start;
+}
+.movement-box-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
