@@ -3,7 +3,7 @@
     /*headers to allowed request*/ 
     header('Access-Control-Allow-Origin: http://127.0.0.1:5500'); //frontend link
     header('Access-Control-Allow-Methods: POST'); //method
-    header('Access-Control-Allow-Headers: Content-Type');//
+    header('Access-Control-Allow-Headers: Content-Type');
     header('Content-Type: application/json');
 
     /*Log in Logic*/ 
