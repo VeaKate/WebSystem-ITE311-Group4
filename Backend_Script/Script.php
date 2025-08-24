@@ -1,6 +1,13 @@
 <?php
     include ("database.php");
+    /*headers to allowed request*/ 
+    header('Access-Control-Allow-Origin: http://127.0.0.1:5500'); //frontend link
+    header('Access-Control-Allow-Methods: POST'); //method
+    header('Access-Control-Allow-Headers: Content-Type');//
     header('Content-Type: application/json');
+
+    /*Log in Logic*/ 
+
     if($_SERVER['REQUEST_METHOD'] == 'POST' && $_SERVER['REQUEST_URI'] == '/WebSystem-ITE311-Group4/Backend_Script/Script.php/login') {
         $input = json_decode(file_get_contents('php://input'), true);
         if (isset($input['email']) && isset($input['password'])) {
