@@ -1,0 +1,9 @@
+sample users in database for login
+
+    email: user1@gmail.com
+    role: admin
+    password: user1pas1
+
+    email: user2@gmail.com
+    role: admin
+    password: user2pas2
