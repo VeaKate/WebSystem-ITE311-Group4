@@ -233,15 +233,23 @@ hr {
     font-weight: bold;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.summary-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 .summary-box.approvals {
     border: 3px solid #2196f3;
 }
-.summary-number {
-    font-size: 3.2rem;
-    font-weight: bold;
-    margin-top: 12px;
-    font-family: Arial, sans-serif;
+.summary-box.approvals:hover {
+    background: #f8fcff;
+    border-color: #1976d2;
+}
+.summary-box.alerts:hover {
+    background: #fff8f8;
+    border-color: #d32f2f;
 }
 
 .logo-area {
@@ -297,4 +305,18 @@ hr {
     width: 80px;
     height: 80px;
     display: block;
+}
+.summary-number {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-top: 12px;
+    font-family: Arial, sans-serif;
+    color: inherit;
+}
+
+.summary-box .summary-number {
+    font-size: 3.2rem !important;
+    font-weight: bold !important;
+    margin-top: 12px;
+    font-family: Arial, sans-serif;
 }

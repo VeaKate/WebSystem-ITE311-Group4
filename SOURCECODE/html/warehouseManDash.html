@@ -21,9 +21,9 @@
                 <span>Warehouse Manager</span>
             </div>
             <nav class="sidebar-nav">
-                <a href="#" class="active">Dashboard</a>
-                <a href="#">Inventory</a>
-                <a href="#">Stock Movements</a>
+                <a href="warehouseManDash.html" class="active">Dashboard</a>
+                <a href="warehouseInvtry.html">Inventory</a>
+                <a href="warehouseStkMove.html">Stock Movements</a>
             </nav>
         </aside>
         <div class="logo-area">
@@ -73,16 +73,17 @@
                 </div>
             </div>
             <div class="summary-row">
-                <div class="summary-box approvals">
+                <div class="summary-box approvals" onclick="navigateToStockMovements()">
                     <div>Pending Approvals</div>
                     <div class="summary-number">5</div>
                 </div>
-                <div class="summary-box alerts">
+                <div class="summary-box alerts" onclick="navigateToInventory()">
                     <div>Alert Stocks</div>
                     <div class="summary-number">3</div>
                 </div>
             </div>
         </main>
     </div>
+    <script src="../js/warehouseManDash.js"></script>
 </body>
 </html>
